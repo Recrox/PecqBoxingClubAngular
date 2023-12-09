@@ -1,0 +1,10 @@
+<form class="member-form" (ngSubmit)="saveMember()">
+    <label for="name">Nom:</label>
+    <input type="text" id="name" [(ngModel)]="member.name" name="name" required>
+  
+    <label for="age">Âge:</label>
+    <input type="number" id="age" [(ngModel)]="member.age" name="age" required>
+  
+    <button type="submit">{{ isEditMode ? 'Mettre à jour' : 'Ajouter' }}</button>
+  </form>
+  
