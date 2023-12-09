@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { BaseService } from './base/base.service';
+import { WeatherForecast } from '../models/weatherForecast';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ export class WeatherService extends BaseService {
     super(httpClient);
   }
 
-  getWeatherForecasts(): Observable<any[]> {
-    return this.get<any[]>('weatherforecast');
+  getWeatherForecasts(): Observable<WeatherForecast[]> {
+    return this.get<WeatherForecast[]>('weatherforecast');
   }
 }
 

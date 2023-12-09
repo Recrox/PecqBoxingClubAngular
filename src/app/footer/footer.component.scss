@@ -1,13 +1,10 @@
-/* app-footer.component.scss */
-
-/* Styles pour le footer */
 footer {
     background-color: #333; /* Couleur de fond */
     color: white; /* Couleur du texte */
-    padding: 20px 0 20px 0; /* Haut, droite, bas, gauche */
-    // position: fixed; /* Position fixe en bas de la page */
-    width: 100%; /* Largeur pleine de la page */
-    bottom: 0; /* Aligner en bas de la page */
+    padding: 20px 0; /* Haut, bas */
     text-align: center; /* Centrer le texte */
-  }
-  
+    margin-top: 10px;
+    width: 100%; /* Largeur pleine de la page */
+    // position: fixed; /* Position fixe en bas de la page */
+
+}

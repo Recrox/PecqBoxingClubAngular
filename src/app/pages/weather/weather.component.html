@@ -1,6 +1,17 @@
-<div *ngFor="let forecast of weatherForecasts" class="weather-forecast">
-  <p>Date: {{ forecast.date }}</p>
-  <p>TemperatureC: {{ forecast.temperatureC }}</p>
-  <p>TemperatureF: {{ forecast.temperatureF }}</p>
-  <p>Summary: {{ forecast.summary }}</p>
+<h2>Prévisions météorologiques</h2>
+
+<div class="weather-forecast">
+  <div class="forecast-header">
+    <div>Date</div>
+    <div>Température C</div>
+    <div>Température F</div>
+    <div>Summary</div>
+  </div>
+  
+  <div *ngFor="let forecast of weatherForecasts" class="forecast-row">
+    <div>{{ forecast.date }}</div>
+    <div>{{ forecast.temperatureC }}</div>
+    <div>{{ forecast.temperatureF }}</div>
+    <div>{{ forecast.summary }}</div>
+  </div>
 </div>
