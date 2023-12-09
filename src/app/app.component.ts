@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { WeatherComponent } from './weather/weather.component';
-import { AccueilComponent } from './accueil/accueil.component';
+import { HomeComponent } from './home/home.component';
 
-const imports = [CommonModule, RouterOutlet, AccueilComponent];
+const imports = [CommonModule, RouterOutlet, HomeComponent];
 
 @Component({
   selector: 'app-root',

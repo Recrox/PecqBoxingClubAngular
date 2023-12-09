@@ -1,0 +1,13 @@
+/* Styles CSS */
+.weather-forecast {
+    display: flex; /* Utiliser Flexbox */
+    flex-direction: row; /* Disposition horizontale */
+    justify-content: space-around; /* Espacement équilibré entre les éléments */
+    border: 1px solid #ccc; /* Bordure pour délimiter chaque élément */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 10px; /* Marge en bas pour séparer les éléments */
+  }
+  
+  .weather-forecast p {
+    margin: 0; /* Supprimer les marges par défaut des paragraphes */
+  }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherService } from '../services/weather.service';
-import { CommonModule } from '@angular/common';
+import { WeatherService } from '../../services/weather.service';
+import { CommonModule } from '@angular/common'; // [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported.
 
 @Component({
   selector: 'app-weather',
