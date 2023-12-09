@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { WeatherComponent } from './weather/weather.component';
 import { AccueilComponent } from './accueil/accueil.component';
 
-const imports = [CommonModule, RouterOutlet, WeatherComponent, AccueilComponent];
+const imports = [CommonModule, RouterOutlet, AccueilComponent];
 
 @Component({
   selector: 'app-root',

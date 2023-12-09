@@ -1,0 +1,23 @@
+/* app-header.component.scss */
+
+/* Styles pour le header */
+header {
+    background-color: #333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur */
+  }
+  
+  nav ul {
+    list-style: none; /* Supprimer les puces */
+    padding: 0; /* Supprimer l'espacement par défaut */
+  }
+  
+  nav ul li {
+    display: inline; /* Afficher les éléments en ligne */
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+  }
+  
+  nav ul li a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement */
+  }
