@@ -51,7 +51,7 @@ function getFakeMembers() : Member[]{
       firstName: `FirstName ${i}`,
       name: `Name ${i}`,
       age: Math.floor(Math.random() * 40) + 20, // Génère un âge entre 20 et 60 ans
-      balance: Math.floor(Math.random() * 40) + 20,
+      solde: Math.floor(Math.random() * 40) + 20,
       license: Math.random() < 0.33 ? null : {
         id: i,
         startDate: getRandomDate(),

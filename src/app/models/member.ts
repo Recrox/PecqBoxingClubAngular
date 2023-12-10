@@ -6,5 +6,5 @@ export interface Member {
   firstName: string;
   age: number;
   license: License | null;
-  balance: number;
+  solde: number;
 }

@@ -62,5 +62,5 @@ const memberInit: Member = {
     startDate: new Date(),
     endDate: new Date()
   },
-  balance: 0
+  solde: 0
 };
