@@ -1,10 +1,24 @@
 <form class="member-form" (ngSubmit)="saveMember()">
-    <label for="name">Nom:</label>
-    <input type="text" id="name" [(ngModel)]="member.name" name="name" required>
-  
-    <label for="age">Âge:</label>
-    <input type="number" id="age" [(ngModel)]="member.age" name="age" required>
-  
-    <button type="submit">{{ isEditMode ? 'Mettre à jour' : 'Ajouter' }}</button>
-  </form>
-  
+  <label for="name">Nom:</label>
+  <input type="text" id="name" [(ngModel)]="member.name" name="name" required>
+
+  <label for="firstName">Prénom:</label>
+  <input type="text" id="firstName" [(ngModel)]="member.firstName" name="firstName" required>
+
+  <label for="age">Âge:</label>
+  <input type="number" id="age" [(ngModel)]="member.age" name="age" required>
+
+  <label for="solde">Solde:</label>
+  <input type="number" id="solde" [(ngModel)]="member.solde" name="solde" required>
+
+  <!-- <label for="licenseId">ID de la licence:</label>
+  <input type="number" id="licenseId" [(ngModel)]="member.license.id" name="licenseId">
+
+  <label for="startDate">Date de début de la licence:</label>
+  <input type="date" id="startDate" [(ngModel)]="member.license.startDate" name="startDate">
+
+  <label for="endDate">Date de fin de la licence:</label>
+  <input type="date" id="endDate" [(ngModel)]="member.license.endDate" name="endDate"> -->
+
+  <button type="submit">{{ isEditMode ? 'Mettre à jour' : 'Ajouter' }}</button>
+</form>

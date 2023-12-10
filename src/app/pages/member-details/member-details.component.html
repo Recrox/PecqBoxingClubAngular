@@ -1,0 +1,19 @@
+<div *ngIf="member">
+    <h2>Détails du membre:</h2>
+    <p>ID: {{ member.id }}</p>
+    <p>Nom: {{ member.name }}</p>
+    <p>Prénom: {{ member.firstName }}</p>
+    <p>Âge: {{ member.age }}</p>
+    <p>Solde: {{ member.solde }} €</p>
+  
+    <h3>Détails Licence:</h3>
+    <div *ngIf="member.license">
+      
+      <p>ID: {{ member.license.id }}</p>
+      <p>Date de début: {{ member.license.startDate | date: 'dd/MM/yyyy' }}</p>
+      <p>Date de fin: {{ member.license.endDate | date: 'dd/MM/yyyy' }}</p>
+      
+    </div>
+
+    <div *ngIf="!member.license"> Pas de License en cours !  </div>
+  </div>

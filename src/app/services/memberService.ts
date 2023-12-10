@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BaseService } from './base/base.service';
 import { HttpClient } from '@angular/common/http';
 import { Member } from '../models/member';
-import { Observable, of, throwError } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 
 @Injectable({
@@ -38,7 +38,7 @@ export class MemberService extends BaseService {
 
 function getFakeMember(id: number) : Member{
   const fakeMembers = getFakeMembers();
-  const member = fakeMembers.find((m) => m.id === id);
+  const member = fakeMembers.find((m) => m.id == id);
   return member as Member;
 }
 

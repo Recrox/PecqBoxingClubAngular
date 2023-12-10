@@ -13,10 +13,8 @@ import { License } from '../../models/license';
   styleUrl: './member-form.component.scss'
 })
 
-
-
 export class MemberFormComponent implements OnInit {
-  member: Member = memberInit; // Initialise un membre vide avec une licence
+  member: Member = memberInit; 
   isEditMode = false; // Indicateur pour distinguer entre ajout et mise à jour
 
   constructor(

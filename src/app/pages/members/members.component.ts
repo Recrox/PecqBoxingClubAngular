@@ -17,6 +17,19 @@ import { MatDialog } from '@angular/material/dialog';
 export class MembersComponent implements OnInit {
   members: Member[] = [];
 
+  // selectedMember: Member = {
+  //   id: 0,
+  //   name: '',
+  //   firstName: '',
+  //   age: 0,
+  //   license: {
+  //     id: 0,
+  //     startDate: new Date(),
+  //     endDate: new Date()
+  //   },
+  //   solde: 0
+  // };
+
   constructor(
     private memberService: MemberService, 
     private router: Router,
@@ -33,11 +46,11 @@ export class MembersComponent implements OnInit {
   }
 
   showAddMember() {
-    // Redirection vers une page ou l'affichage d'un formulaire d'ajout
+    this.router.navigate(['/member-form']);
   }
 
   editMember(member: Member) {
-    // Logique pour l'édition du membre
+    this.router.navigate(['/member-form', member.id]);
   }
 
   deleteMember(member:Member){
@@ -47,7 +60,8 @@ export class MembersComponent implements OnInit {
   }
 
   showDetails(member: Member) {
-    this.router.navigate(['/member', member.id]);
+    this.router.navigate(['/member-details', member.id]);
+    // this.selectedMember = member;
   }
 
   confirmDelete(member: Member) {
