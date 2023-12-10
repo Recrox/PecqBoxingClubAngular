@@ -1,0 +1,18 @@
+@import "../../../styles/variables.scss";
+
+.accueil-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .club-image {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+main {
+    background-color: $--main-clear-color; /* Utilisez la couleur bleu nuit */
+    color: white; /* Couleur du texte pour contraster avec le fond */
+    padding: 20px; /* Espacement intérieur */
+  }
