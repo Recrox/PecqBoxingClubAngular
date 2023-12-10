@@ -48,13 +48,32 @@ function getFakeMembers() : Member[]{
   for (let i = 1; i <= 10; i++) {
     const fakeMember: Member = {
       id: i,
-      name: `Member ${i}`,
+      firstName: `FirstName ${i}`,
+      name: `Name ${i}`,
       age: Math.floor(Math.random() * 40) + 20, // Génère un âge entre 20 et 60 ans
+      balance: Math.floor(Math.random() * 40) + 20,
+      license: Math.random() < 0.33 ? null : {
+        id: i,
+        startDate: getRandomDate(),
+        endDate: getRandomDate()
+      }
     };
   
     fakeMembers.push(fakeMember);
   }
   return fakeMembers;
+}
+
+function getRandomDate(): Date {
+  const today = new Date();
+  const eightMonthsFromNow = new Date();
+  eightMonthsFromNow.setMonth(today.getMonth() + 8);
+
+  const randomDate = new Date(
+    today.getTime() + Math.random() * (eightMonthsFromNow.getTime() - today.getTime())
+  );
+
+  return randomDate;
 }
 
 

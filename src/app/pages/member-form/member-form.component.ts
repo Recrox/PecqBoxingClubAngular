@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Member } from '../../models/member';
+import { Member } from '../../models/member'; // Importe également le modèle License
 import { MemberService } from '../../services/memberService';
 import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { License } from '../../models/license';
 
 @Component({
   selector: 'app-member-form',
@@ -12,8 +13,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './member-form.component.scss'
 })
 
+
+
 export class MemberFormComponent implements OnInit {
-  member: Member = { id: 0, name: '', age: 0 }; // Initialise un membre vide
+  member: Member = memberInit; // Initialise un membre vide avec une licence
   isEditMode = false; // Indicateur pour distinguer entre ajout et mise à jour
 
   constructor(
@@ -31,7 +34,7 @@ export class MemberFormComponent implements OnInit {
   }
 
   loadMember(id: number): void {
-    this.memberService.getMemberById(id).subscribe((data) => {
+    this.memberService.getMemberById(id).subscribe((data: Member) => {
       this.member = data;
     });
   }
@@ -48,3 +51,16 @@ export class MemberFormComponent implements OnInit {
     }
   }
 }
+
+const memberInit: Member = {
+  id: 0,
+  name: '',
+  firstName: '',
+  age: 0,
+  license: {
+    id: 0,
+    startDate: new Date(),
+    endDate: new Date()
+  },
+  balance: 0
+};

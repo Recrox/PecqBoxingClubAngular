@@ -7,7 +7,7 @@
 .member-columns,
 .member-details {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr); /* Six colonnes pour les données */
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }

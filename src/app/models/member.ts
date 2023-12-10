@@ -1,6 +1,10 @@
+import { License } from "./license";
+
 export interface Member {
-    id: number;
-    name: string;
-    age: number;
-  }
-  
+  id: number;
+  name: string;
+  firstName: string;
+  age: number;
+  license: License | null;
+  balance: number;
+}
