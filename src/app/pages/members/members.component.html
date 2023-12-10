@@ -1,0 +1,20 @@
+<h2>Liste des membres:</h2>
+
+<button (click)="showAddMember()">Ajouter un membre</button>
+
+<div class="members-list">
+  <div class="member-columns">
+    <div>Nom</div>
+    <div>Âge</div>
+    <div>Actions</div>
+  </div>
+  <div *ngFor="let member of members" class="member-details">
+    <div>{{ member.name }}</div>
+    <div>{{ member.age }} ans</div>
+    <div class="button-group">
+      <button (click)="editMember(member)">Modifier</button>
+      <button (click)="deleteMember(member)">Supprimer</button>
+      <button (click)="showDetails(member)">Détails</button>
+    </div>
+  </div>
+</div>

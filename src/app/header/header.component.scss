@@ -1,11 +1,10 @@
-/* app-header.component.scss */
+@import "../../styles.scss";
 
-/* Styles pour le header */
 header {
-    background-color: #333; /* Couleur de fond */
-    color: white; /* Couleur du texte */
+    background-color: $--primary-color;
+    color: $--secondary-color;
+
     padding: 20px; /* Espacement intérieur */
-    margin-bottom: 10px;
   }
   
   nav ul {
@@ -18,6 +17,6 @@ header {
   }
   
   nav ul li a {
-    color: white; /* Couleur des liens */
+    color: $--accent-color; /* Couleur des liens */
     text-decoration: none; /* Supprimer le soulignement */
   }

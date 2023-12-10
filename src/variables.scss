@@ -1,0 +1,24 @@
+$--primary-color: #2d6bc9; 
+$--secondary-color: #D90429; 
+$--accent-color: #e24141d8; 
+$--main-clear-color: #9ed3ff; 
+
+
+
+
+
+
+//Other solution for global variable???
+
+// @import '~@angular/material/theming';
+// // Theme configuration
+// $primary: mat-palette($mat-blue, 800, 500, 900);
+// $accent:  mat-palette($mat-blue, A200, A100, A400);
+// $warn: mat-palette($mat-red);
+
+// // Custom colors
+// $custom-colors: (
+//   custom-color-a: mat-color($mat-green, 700),
+//   custom-color-b: mat-color($mat-red, 400),
+// );
+// $theme: map-merge($theme, (custom-colors: $custom-colors));

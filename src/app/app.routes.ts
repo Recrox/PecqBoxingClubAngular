@@ -4,8 +4,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { WeatherComponent } from './pages/weather/weather.component';
 import { LoginComponent } from './pages/login/login.component';
-import { MembersComponent } from './pages/member/members.component';
-import { MemberFormComponent } from './member-form/member-form.component';
+import { MemberFormComponent } from './pages/member-form/member-form.component';
+import { MembersComponent } from './pages/members/members.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Member } from '../models/member';
-import { MemberService } from '../services/memberService';
+import { Member } from '../../models/member';
+import { MemberService } from '../../services/memberService';
 import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 

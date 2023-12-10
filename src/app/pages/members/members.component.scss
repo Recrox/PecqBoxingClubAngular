@@ -1,0 +1,27 @@
+.members-list {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.member-columns,
+.member-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.member-columns div,
+.member-details div {
+  padding: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-group button {
+  margin-left: 5px;
+}
