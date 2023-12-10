@@ -18,9 +18,9 @@
     <div>{{ member.license?.startDate ? (member.license!.startDate | date: 'dd/MM/yyyy') : 'Pas de license' }}</div>
     <div>{{ member.solde }} €</div>
     <div class="button-group">
+      <button (click)="showDetails(member)">Détails</button>
       <button (click)="editMember(member)">Modifier</button>
       <button (click)="deleteMember(member)">Supprimer</button>
-      <button (click)="showDetails(member)">Détails</button>
     </div>
   </div>
 </div>

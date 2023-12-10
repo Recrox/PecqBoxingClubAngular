@@ -1,3 +1,6 @@
+@import '../../../styles/button.scss';
+@import '../../../styles/title.scss';
+
 .members-list {
   border: 1px solid #ccc;
   margin-top: 20px;
@@ -12,9 +15,16 @@
   border-bottom: 1px solid #ccc;
 }
 
-.member-columns div,
-.member-details div {
-  padding: 5px;
+.member-columns div{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 8px;
+
+  div {
+    padding: 5px;
+  }
 }
 
 .button-group {
@@ -25,5 +35,3 @@
 .button-group button {
   margin-left: 5px;
 }
-
-@import '../../../styles/button.scss';

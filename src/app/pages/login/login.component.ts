@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  username: string = '';
+  password: string = '';
+
+  onSubmit(): void {
+    // Ici, vous pouvez ajouter la logique de soumission du formulaire
+    // console.log('Nom d\'utilisateur :', this.username);
+    // console.log('Mot de passe :', this.password);
+
+    // Par exemple, vous pouvez appeler un service d'authentification pour valider les informations
+    // this.authService.login(this.username, this.password);
+  }
+
 }
